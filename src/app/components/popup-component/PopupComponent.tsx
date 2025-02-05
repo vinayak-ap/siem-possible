@@ -1,38 +1,32 @@
 'use client';
 
 import React, { useState } from 'react';
-import { allEquipment, suggestedEquipment, Equipment } from '../../helper/equipment';
+import { suggestedEquipment, EquipmentRecord, EquipmentVMO, getEquipmentData } from '../../helper/equipment';
 import 'font-awesome/css/font-awesome.min.css';
 import './PopupComponent.css';
 import listData from '../../data/listData.json';
 
 interface PopupComponentProps {
     onClose: () => void;
-    onSelectEquipment: (equipment: Equipment) => void;
+    onSelectEquipment: (equipment: EquipmentRecord) => void;
 }
 
 const PopupComponent: React.FC<PopupComponentProps> = ({ onClose, onSelectEquipment }) => {
     const [searchQuery, setSearchQuery] = useState('');
-    const [selectedEquipment, setSelectedEquipment] = useState<Equipment | null>(null);
-    const inData = listData.ServiceData.modelObjects
-    const namesArray = Object.values(inData).map(obj => {
-        const nameEntry = obj?.props?.awp0CellProperties?.dbValues.find((val: string) => val.startsWith("Name\\:"));
-        return nameEntry ? nameEntry.split("\\:")[1] : null; // Extract value after "Name\:"
-    }).filter(Boolean)
+    const [selectedEquipment, setSelectedEquipment] = useState<EquipmentRecord | null>(null);
+    const equipmentData: EquipmentRecord[] = getEquipmentData(Object.values(listData.ServiceData.modelObjects) as unknown as EquipmentVMO[]);
 
+    const getFilteredEquipment = () => {
+        return equipmentData.filter(item => item.object_string && item.object_string.toLowerCase().includes(searchQuery));
+    };
 
-    // Filtered equipment names based on the search query, or an empty list if searchQuery is empty
-    const filteredEquipment = searchQuery
-        ? namesArray.filter((name) =>
-            name.toLowerCase().includes(searchQuery.toLowerCase())
-        )
-        : []; // If searchQuery is empty, return an empty array
-    // Handle change in search input
+    const filteredEquipment = searchQuery ? getFilteredEquipment() : equipmentData;
+
     const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setSearchQuery(event.target.value);
     };
 
-    const handleEquipmentSelect = (equipment: Equipment) => {
+    const handleEquipmentSelect = (equipment: EquipmentRecord) => {
         setSelectedEquipment(equipment === selectedEquipment ? null : equipment);
     };
 
@@ -48,56 +42,43 @@ const PopupComponent: React.FC<PopupComponentProps> = ({ onClose, onSelectEquipm
             <div className="popup-content">
                 <h3>Suggested Equipment</h3>
                 <ul>
-                    {suggestedEquipment.map((equipment) => (
+                    {suggestedEquipment.map((equipment: EquipmentRecord) => (
                         <li
-                            key={equipment.name}
-                            className={selectedEquipment && selectedEquipment.name === equipment.name ? 'selected' : ''}
+                            key={equipment.uid}
+                            className={selectedEquipment && selectedEquipment.uid === equipment.uid ? 'selected' : ''}
                             onClick={() => handleEquipmentSelect(equipment)}
                         >
-                            {equipment.name}
+                            {equipment.object_string}
                         </li>
                     ))}
                 </ul>
 
                 <div className="search-box">
-                    <input type="text"
-                        placeholder="Search equipment..."
-                        value={searchQuery}
-                        onChange={handleSearchChange} />
+                    <input type="text" placeholder="Search equipment..." value={searchQuery} onChange={handleSearchChange} />
                     <button className="search-icon">🔍</button>
                 </div>
-                <div className="search-results">
-                    {filteredEquipment.length >= 0 ? (
-                        <ul>
-                            {filteredEquipment.map((equipment, index) => (
-                                <li key={index}>{equipment}</li>
-                            ))}
-                        </ul>
-                    ) : (
-                        <p>No equipment found</p>
-                    )}
-                </div>
+
                 <h3>All Equipment</h3>
                 <table className="equipment-table">
                     <thead>
                         <tr>
                             <th>Name</th>
-                            <th>Type</th>
-                            <th>Status</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {namesArray.map((equipment) => (
-                            <tr key={equipment.name} className={selectedEquipment && selectedEquipment.name === equipment.name ? 'selected' : ''}
-                                onClick={() => handleEquipmentSelect(equipment)}>
-                                <td>{equipment.name}</td>
-                                <td>{equipment.type}</td>
-                                <td>{equipment.status}</td>
-                            </tr>
-                        ))}
+                        {filteredEquipment && filteredEquipment.length >= 0 ? (
+                            filteredEquipment.map((equipment: EquipmentRecord) => (
+                                <tr key={equipment.uid} className={selectedEquipment && selectedEquipment.uid === equipment.uid ? 'selected' : ''}
+                                    onClick={() => handleEquipmentSelect(equipment)}>
+                                    <td>{equipment.object_string}</td>
+                                </tr>
+                            ))
+                        ) : (
+                            <p>No equipment found</p>
+                        )}
                     </tbody>
                 </table>
-                <button className='add-button' onClick={handleAddClick} disabled={!selectedEquipment}>Add Equipment</button>
+                <button className='add-button' onClick={handleAddClick} disabled={!selectedEquipment}>Add</button>
             </div>
             <button className="popup-close" onClick={onClose}>
                 <i className="fas fa-times"></i>
