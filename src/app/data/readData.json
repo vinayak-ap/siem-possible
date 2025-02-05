@@ -1,0 +1,460 @@
+{
+    ".QName": "http://mbc0.com/Schemas/Internal/MfgBvrCore/2015-03/DataManagement.LoadObjectResponse2",
+    "ServiceData": {
+        "modelObjects": {
+            "SR::N::Mfg0BvrProcess..1.CStv9$kyt53C8D.hhrdqE2QJPZb_B.Qcgdq4U9JPZb_B..1...": {
+                "uid": "SR::N::Mfg0BvrProcess..1.CStv9$kyt53C8D.hhrdqE2QJPZb_B.Qcgdq4U9JPZb_B..1...",
+                "className": "ImanItemBOPLine",
+                "type": "Mfg0BvrProcess",
+                "props": {
+                    "Mfg0input_flows": {},
+                    "Mfg0input_scope_flows": {},
+                    "Mfg0output_flows": {},
+                    "Mfg0output_scope_flows": {},
+                    "Mfg0sub_elements": {
+                        "dbValues": [
+                            "SR::N::Mfg0BvrProcess..1.lvg$SWyBt5XnBC.hhrdqE2QJPZb_B.Qcgdq4U9JPZb_B.Group:/Thid_Q4pdq4U9JPZb_B.1..."
+                        ],
+                        "uiValues": [
+                            "000888/A;1-Add cofee beans"
+                        ]
+                    },
+                    "Mfg0used_equipment": {},
+                    "awb0BomLineItemId": {
+                        "dbValues": [
+                            "000887"
+                        ],
+                        "uiValues": [
+                            "000887"
+                        ]
+                    },
+                    "awb0BomLineRevId": {
+                        "dbValues": [
+                            "A"
+                        ],
+                        "uiValues": [
+                            "A"
+                        ]
+                    },
+                    "awb0RevisionRelStatusList": {},
+                    "awp0CellProperties": {
+                        "dbValues": [
+                            "ewi0display_title\\:GR_COld",
+                            "Rev Description\\:",
+                            "Quantity\\:",
+                            "Find No.\\:",
+                            "Rev Name\\:GR_COld"
+                        ],
+                        "uiValues": [
+                            "ewi0display_title\\:GR_COld",
+                            "Rev Description\\:",
+                            "Quantity\\:",
+                            "Find No.\\:",
+                            "Rev Name\\:GR_COld"
+                        ]
+                    },
+                    "awp0ThumbnailImageTicket": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ]
+                    },
+                    "bl_clone_stable_occurrence_id": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "bl_item_object_desc": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ]
+                    },
+                    "bl_item_object_type": {
+                        "dbValues": [
+                            "Erm0GenRecipProc"
+                        ],
+                        "uiValues": [
+                            "General Recipe Process"
+                        ]
+                    },
+                    "bl_parent": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            "00000000"
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "bl_quantity": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ]
+                    },
+                    "bl_rev_fnd0InProcess": {
+                        "dbValues": [
+                            "False"
+                        ],
+                        "uiValues": [
+                            "False"
+                        ]
+                    },
+                    "bl_rev_ics_classified": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ]
+                    },
+                    "bl_rev_object_name": {
+                        "dbValues": [
+                            "GR_COld"
+                        ],
+                        "uiValues": [
+                            "GR_COld"
+                        ]
+                    },
+                    "bl_revision": {
+                        "dbValues": [
+                            "QQudq4U9JPZb_B"
+                        ],
+                        "uiValues": [
+                            "0001a238"
+                        ]
+                    },
+                    "bl_uom": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "mbc0BopQualifier": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ]
+                    },
+                    "object_string": {
+                        "dbValues": [
+                            "000887/A;1-GR_COld"
+                        ],
+                        "uiValues": [
+                            "000887/A;1-GR_COld"
+                        ]
+                    }
+                }
+            },
+            "SR::N::Mfg0BvrProcess..1.lvg$SWyBt5XnBC.hhrdqE2QJPZb_B.Qcgdq4U9JPZb_B.Group:/Thid_Q4pdq4U9JPZb_B.1...": {
+                "uid": "SR::N::Mfg0BvrProcess..1.lvg$SWyBt5XnBC.hhrdqE2QJPZb_B.Qcgdq4U9JPZb_B.Group:/Thid_Q4pdq4U9JPZb_B.1...",
+                "className": "ImanItemBOPLine",
+                "type": "Mfg0BvrProcess",
+                "props": {
+                    "Mfg0input_flows": {},
+                    "Mfg0input_scope_flows": {},
+                    "Mfg0output_flows": {},
+                    "Mfg0output_scope_flows": {},
+                    "Mfg0sub_elements": {},
+                    "Mfg0used_equipment": {
+                        "dbValues": [
+                            "SR::N::Mfg0BvrEquipment..1.Jv_HzNSgt53upB.hhrdqE2QJPZb_B.Qcgdq4U9JPZb_B.Group:/Thid_Q4pdq4U9JPZb_B/wUidq4U9JPZb_B.1..."
+                        ],
+                        "uiValues": [
+                            "000633/A;1-Brew Tank - 1000 L"
+                        ]
+                    },
+                    "awb0BomLineItemId": {
+                        "dbValues": [
+                            "000888"
+                        ],
+                        "uiValues": [
+                            "000888"
+                        ]
+                    },
+                    "awb0BomLineRevId": {
+                        "dbValues": [
+                            "A"
+                        ],
+                        "uiValues": [
+                            "A"
+                        ]
+                    },
+                    "awb0RevisionRelStatusList": {},
+                    "awp0CellProperties": {
+                        "dbValues": [
+                            "ewi0display_title\\:Add cofee beans",
+                            "Rev Description\\:",
+                            "Quantity\\:",
+                            "Find No.\\:10",
+                            "Rev Name\\:Add cofee beans"
+                        ],
+                        "uiValues": [
+                            "ewi0display_title\\:Add cofee beans",
+                            "Rev Description\\:",
+                            "Quantity\\:",
+                            "Find No.\\:10",
+                            "Rev Name\\:Add cofee beans"
+                        ]
+                    },
+                    "awp0ThumbnailImageTicket": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ]
+                    },
+                    "bl_clone_stable_occurrence_id": {
+                        "dbValues": [
+                            "Q4pdq4U9JPZb_B"
+                        ]
+                    },
+                    "bl_item_object_desc": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ]
+                    },
+                    "bl_item_object_type": {
+                        "dbValues": [
+                            "Erm0ProcStage"
+                        ],
+                        "uiValues": [
+                            "Process Stage"
+                        ]
+                    },
+                    "bl_parent": {
+                        "dbValues": [
+                            "SR::N::Mfg0BvrProcess..1.CStv9$kyt53C8D.hhrdqE2QJPZb_B.Qcgdq4U9JPZb_B..1..."
+                        ],
+                        "uiValues": [
+                            "00019cf8"
+                        ]
+                    },
+                    "bl_quantity": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ]
+                    },
+                    "bl_rev_fnd0InProcess": {
+                        "dbValues": [
+                            "False"
+                        ],
+                        "uiValues": [
+                            "False"
+                        ]
+                    },
+                    "bl_rev_ics_classified": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ]
+                    },
+                    "bl_rev_object_name": {
+                        "dbValues": [
+                            "Add cofee beans"
+                        ],
+                        "uiValues": [
+                            "Add cofee beans"
+                        ]
+                    },
+                    "bl_revision": {
+                        "dbValues": [
+                            "Qsmdq4U9JPZb_B"
+                        ],
+                        "uiValues": [
+                            "0001a99d"
+                        ]
+                    },
+                    "bl_uom": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            "each"
+                        ]
+                    },
+                    "mbc0BopQualifier": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ]
+                    },
+                    "object_string": {
+                        "dbValues": [
+                            "000888/A;1-Add cofee beans"
+                        ],
+                        "uiValues": [
+                            "000888/A;1-Add cofee beans"
+                        ]
+                    }
+                }
+            },
+            "QQudq4U9JPZb_B": {
+                "objectID": "QQudq4U9JPZb_B",
+                "uid": "QQudq4U9JPZb_B",
+                "className": "Erm0GenRecipProcRevision",
+                "type": "Erm0GenRecipProcRevision",
+                "props": {}
+            },
+            "SR::N::Mfg0BvrEquipment..1.Jv_HzNSgt53upB.hhrdqE2QJPZb_B.Qcgdq4U9JPZb_B.Group:/Thid_Q4pdq4U9JPZb_B/wUidq4U9JPZb_B.1...": {
+                "uid": "SR::N::Mfg0BvrEquipment..1.Jv_HzNSgt53upB.hhrdqE2QJPZb_B.Qcgdq4U9JPZb_B.Group:/Thid_Q4pdq4U9JPZb_B/wUidq4U9JPZb_B.1...",
+                "className": "ImanItemBOPLine",
+                "type": "Mfg0BvrEquipment",
+                "props": {
+                    "awb0BomLineItemId": {
+                        "dbValues": [
+                            "000633"
+                        ],
+                        "uiValues": [
+                            "000633"
+                        ]
+                    },
+                    "awb0BomLineRevId": {
+                        "dbValues": [
+                            "A"
+                        ],
+                        "uiValues": [
+                            "A"
+                        ]
+                    },
+                    "awb0RevisionRelStatusList": {},
+                    "awp0CellProperties": {
+                        "dbValues": [
+                            "Rev Name\\:Brew Tank - 1000 L",
+                            "Rev Description\\:",
+                            "Quantity\\:",
+                            "Find No.\\:10"
+                        ],
+                        "uiValues": [
+                            "Rev Name\\:Brew Tank - 1000 L",
+                            "Rev Description\\:",
+                            "Quantity\\:",
+                            "Find No.\\:10"
+                        ]
+                    },
+                    "awp0ThumbnailImageTicket": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ]
+                    },
+                    "bl_clone_stable_occurrence_id": {
+                        "dbValues": [
+                            "wUidq4U9JPZb_B"
+                        ]
+                    },
+                    "bl_item_object_type": {
+                        "dbValues": [
+                            "Mfg0MEEquipment"
+                        ],
+                        "uiValues": [
+                            "Equipment"
+                        ]
+                    },
+                    "bl_parent": {
+                        "dbValues": [
+                            "SR::N::Mfg0BvrProcess..1.lvg$SWyBt5XnBC.hhrdqE2QJPZb_B.Qcgdq4U9JPZb_B.Group:/Thid_Q4pdq4U9JPZb_B.1..."
+                        ],
+                        "uiValues": [
+                            "00019cfa"
+                        ]
+                    },
+                    "bl_quantity": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ]
+                    },
+                    "bl_rev_fnd0InProcess": {
+                        "dbValues": [
+                            "False"
+                        ],
+                        "uiValues": [
+                            "False"
+                        ]
+                    },
+                    "bl_rev_object_name": {
+                        "dbValues": [
+                            "Brew Tank - 1000 L"
+                        ],
+                        "uiValues": [
+                            "Brew Tank - 1000 L"
+                        ]
+                    },
+                    "bl_revision": {
+                        "dbValues": [
+                            "g8rdoHtLJPZb_B"
+                        ],
+                        "uiValues": [
+                            "0001864d"
+                        ]
+                    },
+                    "bl_uom": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            "each"
+                        ]
+                    },
+                    "object_string": {
+                        "dbValues": [
+                            "000633/A;1-Brew Tank - 1000 L"
+                        ],
+                        "uiValues": [
+                            "000633/A;1-Brew Tank - 1000 L"
+                        ]
+                    }
+                }
+            },
+            "Qsmdq4U9JPZb_B": {
+                "objectID": "Qsmdq4U9JPZb_B",
+                "uid": "Qsmdq4U9JPZb_B",
+                "className": "Erm0ProcStageRevision",
+                "type": "Erm0ProcStageRevision",
+                "props": {}
+            },
+            "g8rdoHtLJPZb_B": {
+                "objectID": "g8rdoHtLJPZb_B",
+                "uid": "g8rdoHtLJPZb_B",
+                "className": "Mfg0MEEquipmentRevision",
+                "type": "Mfg0MEEquipmentRevision",
+                "props": {}
+            }
+        }
+    }
+}
