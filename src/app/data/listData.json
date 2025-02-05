@@ -1,0 +1,1208 @@
+{
+    ".QName": "http://awp0.com/Schemas/Internal/AWS2/2023-06/Finder.SearchResponse",
+    "totalFound": 5,
+    "totalLoaded": 5,
+    "defaultFilterFieldDisplayCount": 10,
+    "endIndex": 4,
+    "searchResultsJSON": "{\"objects\":[{\n\"type\": \"Mfg0MEEquipmentRevision\",\n\"uid\": \"wcgdoPc4JPZb_B\"\n,\n\"props\": {\n}\n}\n,\n{\n\"type\": \"Mfg0MEEquipmentRevision\",\n\"uid\": \"g8rdoHtLJPZb_B\"\n,\n\"props\": {\n}\n}\n,\n{\n\"type\": \"Mfg0MEEquipmentRevision\",\n\"uid\": \"QAodoHtLJPZb_B\"\n,\n\"props\": {\n}\n}\n,\n{\n\"type\": \"Mfg0MEEquipmentRevision\",\n\"uid\": \"hkkdoD3nJPZb_B\"\n,\n\"props\": {\n}\n}\n,\n{\n\"type\": \"Mfg0MEEquipmentRevision\",\n\"uid\": \"hYldoD3nJPZb_B\"\n,\n\"props\": {\n}\n}\n\n]}",
+    "cursor": {
+        "startIndex": 0,
+        "endIndex": 4,
+        "startReached": true,
+        "endReached": true
+    },
+    "searchFilterCategories": [
+        {
+            "internalName": "Categorization.category",
+            "displayName": "Category",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "WorkspaceObject.object_type",
+            "displayName": "Type",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "CLS.type",
+            "displayName": "Classification",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "ItemRevision.awn0nxProperties",
+            "displayName": "NX Properties",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "ItemRevision.awp0AliasID",
+            "displayName": "Alias ID",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "ItemRevision.awp0AlternateID",
+            "displayName": "Alternate ID",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "POM_application_object.last_mod_date",
+            "displayName": "Date Modified",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "POM_application_object.last_mod_user",
+            "displayName": "Last Modifying User",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "POM_application_object.owning_group",
+            "displayName": "Group ID",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "POM_application_object.owning_user",
+            "displayName": "Owner",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "WorkspaceObject.awp0IsSuspect",
+            "displayName": "Suspect",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "WorkspaceObject.date_released",
+            "displayName": "Date Released",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "WorkspaceObject.fnd0InProcess",
+            "displayName": "In Process",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "WorkspaceObject.fnd0Maturity",
+            "displayName": "Maturity",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "WorkspaceObject.gov_classification",
+            "displayName": "Government Classification",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "WorkspaceObject.ip_classification",
+            "displayName": "IP Classification",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "WorkspaceObject.owning_site.name",
+            "displayName": "Site Name",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "WorkspaceObject.project_list",
+            "displayName": "Projects",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "WorkspaceObject.release_status_list",
+            "displayName": "Release Status",
+            "defaultFilterValueDisplayCount": 5
+        }
+    ],
+    "searchFilterCategoriesUnpopulated": [
+        {
+            "internalName": "CLS.CIE_PH_ADV_PROP#02-CIE_PH_ADV_0001#AAA.Max",
+            "displayName": "Temperature.Max",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "CLS.CIE_PH_ADV_PROP#02-CIE_PH_ADV_0001#AAA.Min",
+            "displayName": "Temperature.Min",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "CLS.CIE_PH_ADV_PROP#02-CIE_PH_ADV_0001#AAA.Nominal",
+            "displayName": "Temperature.Nominal",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "CLS.ColdBrew#02-ColdBrew002#AAA.Max",
+            "displayName": "Angular Speed.Max",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "CLS.ColdBrew#02-ColdBrew002#AAA.Min",
+            "displayName": "Angular Speed.Min",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "CLS.ColdBrew#02-ColdBrew002#AAA.Nominal",
+            "displayName": "Angular Speed.Nominal",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "CLS.ColdBrew#02-ColdBrew004#AAA.Max",
+            "displayName": "Blend Capacity.Max",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "CLS.ColdBrew#02-ColdBrew004#AAA.Min",
+            "displayName": "Blend Capacity.Min",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "CLS.ColdBrew#02-ColdBrew004#AAA.Nominal",
+            "displayName": "Blend Capacity.Nominal",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "CLS.ColdBrew#02-ColdBrew005#AAA.Max",
+            "displayName": "Blend Time.Max",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "CLS.ColdBrew#02-ColdBrew005#AAA.Min",
+            "displayName": "Blend Time.Min",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "CLS.ColdBrew#02-ColdBrew005#AAA.Nominal",
+            "displayName": "Blend Time.Nominal",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "CLS.ColdBrew#02-ColdBrew007#AAA.Max",
+            "displayName": "Flow Rate.Max",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "CLS.ColdBrew#02-ColdBrew007#AAA.Min",
+            "displayName": "Flow Rate.Min",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "CLS.ColdBrew#02-ColdBrew007#AAA.Nominal",
+            "displayName": "Flow Rate.Nominal",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "CLS.ColdBrew#02-ColdBrew008#AAA.Max",
+            "displayName": "Tank Capacity.Max",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "CLS.ColdBrew#02-ColdBrew008#AAA.Min",
+            "displayName": "Tank Capacity.Min",
+            "defaultFilterValueDisplayCount": 5
+        },
+        {
+            "internalName": "CLS.ColdBrew#02-ColdBrew008#AAA.Nominal",
+            "displayName": "Tank Capacity.Nominal",
+            "defaultFilterValueDisplayCount": 5
+        }
+    ],
+    "searchFilterMap": {
+        "CLS.type": [
+            {
+                "searchFilterType": "ObjectFilter",
+                "stringValue": "0/gBndoD9FJPZb_B",
+                "stringDisplayValue": "Cold Brew Coffee",
+                "startDateValue": "2025-02-05T05:54:58-05:00",
+                "endDateValue": "2025-02-05T05:54:58-05:00",
+                "startNumericValue": 0.00000000000000000e+00,
+                "endNumericValue": 0.00000000000000000e+00,
+                "count": 5,
+                "selected": false,
+                "startEndRange": "",
+                "colorValue": ""
+            }
+        ],
+        "Categorization.category": [
+            {
+                "searchFilterType": "StringFilter",
+                "stringValue": "Resources",
+                "stringDisplayValue": "Resources",
+                "startDateValue": "2025-02-05T05:54:58-05:00",
+                "endDateValue": "2025-02-05T05:54:58-05:00",
+                "startNumericValue": 0.00000000000000000e+00,
+                "endNumericValue": 0.00000000000000000e+00,
+                "count": 5,
+                "selected": false,
+                "startEndRange": "",
+                "colorValue": ""
+            }
+        ],
+        "ItemRevision.awn0nxProperties": [],
+        "ItemRevision.awp0AliasID": [],
+        "ItemRevision.awp0AlternateID": [],
+        "POM_application_object.last_mod_date": [],
+        "POM_application_object.last_mod_user": [],
+        "POM_application_object.owning_group": [],
+        "POM_application_object.owning_user": [],
+        "WorkspaceObject.awp0IsSuspect": [],
+        "WorkspaceObject.date_released": [],
+        "WorkspaceObject.fnd0InProcess": [],
+        "WorkspaceObject.fnd0Maturity": [],
+        "WorkspaceObject.gov_classification": [],
+        "WorkspaceObject.ip_classification": [],
+        "WorkspaceObject.object_type": [
+            {
+                "searchFilterType": "StringFilter",
+                "stringValue": "Mfg0MEEquipmentRevision",
+                "stringDisplayValue": "Equipment Revision",
+                "startDateValue": "2025-02-05T05:54:58-05:00",
+                "endDateValue": "2025-02-05T05:54:58-05:00",
+                "startNumericValue": 0.00000000000000000e+00,
+                "endNumericValue": 0.00000000000000000e+00,
+                "count": 5,
+                "selected": true,
+                "startEndRange": "",
+                "colorValue": ""
+            },
+            {
+                "searchFilterType": "StringFilter",
+                "stringValue": "Erm0ProcOperRevision",
+                "stringDisplayValue": "Process Operation Revision",
+                "startDateValue": "2025-02-05T05:54:58-05:00",
+                "endDateValue": "2025-02-05T05:54:58-05:00",
+                "startNumericValue": 0.00000000000000000e+00,
+                "endNumericValue": 0.00000000000000000e+00,
+                "count": 4,
+                "selected": false,
+                "startEndRange": "",
+                "colorValue": ""
+            },
+            {
+                "searchFilterType": "StringFilter",
+                "stringValue": "Erm0RecipeOpRevision",
+                "stringDisplayValue": "Recipe Operation Revision",
+                "startDateValue": "2025-02-05T05:54:58-05:00",
+                "endDateValue": "2025-02-05T05:54:58-05:00",
+                "startNumericValue": 0.00000000000000000e+00,
+                "endNumericValue": 0.00000000000000000e+00,
+                "count": 2,
+                "selected": false,
+                "startEndRange": "",
+                "colorValue": ""
+            },
+            {
+                "searchFilterType": "StringFilter",
+                "stringValue": "Erm0RecUnitProcRevision",
+                "stringDisplayValue": "Recipe Unit Procedure Revision",
+                "startDateValue": "2025-02-05T05:54:58-05:00",
+                "endDateValue": "2025-02-05T05:54:58-05:00",
+                "startNumericValue": 0.00000000000000000e+00,
+                "endNumericValue": 0.00000000000000000e+00,
+                "count": 1,
+                "selected": false,
+                "startEndRange": "",
+                "colorValue": ""
+            }
+        ],
+        "WorkspaceObject.owning_site.name": [],
+        "WorkspaceObject.project_list": [],
+        "WorkspaceObject.release_status_list": []
+    },
+    "additionalSearchInfoMap": {
+        "additionalInfoMessages": [],
+        "categoryHasMoreFacetValuesList": [],
+        "defaultActiveFolders": [],
+        "displayNamesOfPropsInFilterMap": [],
+        "doPrivateSavedQueriesExist": [
+            "false"
+        ],
+        "nonIndexedColumns": [],
+        "nonSortableColumns": [],
+        "searchExceededThreshold": [
+            "false"
+        ],
+        "searchGroupedCategories": [],
+        "searchPrefilters": [],
+        "searchSnippets": [],
+        "searchTermsToHighlight": [],
+        "translatedSearchCriteriaForPropertySpecificSearch": [
+            "(V_A_L_0:\"ColdBrew#ColdBrew111#AAA\")",
+            "V_A_L_0:CLS.classIds"
+        ],
+        "unReadableCount": []
+    },
+    "objectsGroupedByProperty": {
+        "internalPropertyName": "WorkspaceObject.object_type",
+        "groupedObjectsMap": [
+            [
+                {
+                    "uid": "g8rdoHtLJPZb_B",
+                    "className": "Mfg0MEEquipmentRevision",
+                    "type": "Mfg0MEEquipmentRevision"
+                },
+                {
+                    "uid": "wcgdoPc4JPZb_B",
+                    "className": "Mfg0MEEquipmentRevision",
+                    "type": "Mfg0MEEquipmentRevision"
+                },
+                {
+                    "uid": "QAodoHtLJPZb_B",
+                    "className": "Mfg0MEEquipmentRevision",
+                    "type": "Mfg0MEEquipmentRevision"
+                },
+                {
+                    "uid": "hkkdoD3nJPZb_B",
+                    "className": "Mfg0MEEquipmentRevision",
+                    "type": "Mfg0MEEquipmentRevision"
+                },
+                {
+                    "uid": "hYldoD3nJPZb_B",
+                    "className": "Mfg0MEEquipmentRevision",
+                    "type": "Mfg0MEEquipmentRevision"
+                }
+            ],
+            [
+                [
+                    "aw-charts-chartColor1"
+                ],
+                [
+                    "aw-charts-chartColor1"
+                ],
+                [
+                    "aw-charts-chartColor1"
+                ],
+                [
+                    "aw-charts-chartColor1"
+                ],
+                [
+                    "aw-charts-chartColor1"
+                ]
+            ]
+        ]
+    },
+    "columnConfig": {
+        "columnConfigId": "",
+        "operationType": "",
+        "columns": []
+    },
+    "ServiceData": {
+        "plain": [
+            "wcgdoPc4JPZb_B",
+            "g8rdoHtLJPZb_B",
+            "QAodoHtLJPZb_B",
+            "hkkdoD3nJPZb_B",
+            "hYldoD3nJPZb_B"
+        ],
+        "modelObjects": {
+            "wcgdoPc4JPZb_B": {
+                "objectID": "wcgdoPc4JPZb_B",
+                "uid": "wcgdoPc4JPZb_B",
+                "className": "Mfg0MEEquipmentRevision",
+                "type": "Mfg0MEEquipmentRevision",
+                "props": {
+                    "awp0CellProperties": {
+                        "dbValues": [
+                            "Name\\:Dosing Tank",
+                            "ID\\:000643",
+                            "Revision\\:A"
+                        ],
+                        "uiValues": [
+                            "Name\\:Dosing Tank",
+                            "ID\\:000643",
+                            "Revision\\:A"
+                        ]
+                    },
+                    "awp0ConfiguredRevision": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ]
+                    },
+                    "awp0ThumbnailImageTicket": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ]
+                    },
+                    "checked_out_date": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "checked_out_user": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            " "
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "cls0IsEnforcementSatisfied": {
+                        "dbValues": [
+                            "1"
+                        ],
+                        "uiValues": [
+                            "True"
+                        ]
+                    },
+                    "cm0AuthoringChangeRevision": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "creation_date": {
+                        "dbValues": [
+                            "2025-01-20T12:28:39-05:00"
+                        ],
+                        "uiValues": [
+                            "20-Jan-2025 12:28"
+                        ]
+                    },
+                    "date_released": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "fnd0InProcess": {
+                        "dbValues": [
+                            "0"
+                        ],
+                        "uiValues": [
+                            "False"
+                        ]
+                    },
+                    "is_modifiable": {
+                        "dbValues": [
+                            "1"
+                        ],
+                        "uiValues": [
+                            "True"
+                        ]
+                    },
+                    "is_vi": {
+                        "dbValues": [
+                            "0"
+                        ],
+                        "uiValues": [
+                            "False"
+                        ]
+                    },
+                    "items_tag": {
+                        "dbValues": [
+                            "wYsdoPc4JPZb_B"
+                        ],
+                        "uiValues": [
+                            "000643-Dosing Tank"
+                        ]
+                    },
+                    "object_desc": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "object_name": {
+                        "dbValues": [
+                            "Dosing Tank"
+                        ],
+                        "uiValues": [
+                            "Dosing Tank"
+                        ]
+                    },
+                    "object_string": {
+                        "dbValues": [
+                            "000643/A;1-Dosing Tank"
+                        ],
+                        "uiValues": [
+                            "000643/A;1-Dosing Tank"
+                        ]
+                    },
+                    "release_status_list": {}
+                }
+            },
+            "g8rdoHtLJPZb_B": {
+                "objectID": "g8rdoHtLJPZb_B",
+                "uid": "g8rdoHtLJPZb_B",
+                "className": "Mfg0MEEquipmentRevision",
+                "type": "Mfg0MEEquipmentRevision",
+                "props": {
+                    "awp0CellProperties": {
+                        "dbValues": [
+                            "Name\\:Brew Tank - 1000 L",
+                            "ID\\:000633",
+                            "Revision\\:A"
+                        ],
+                        "uiValues": [
+                            "Name\\:Brew Tank - 1000 L",
+                            "ID\\:000633",
+                            "Revision\\:A"
+                        ]
+                    },
+                    "awp0ConfiguredRevision": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ]
+                    },
+                    "awp0ThumbnailImageTicket": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ]
+                    },
+                    "checked_out_date": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "checked_out_user": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            " "
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "cls0IsEnforcementSatisfied": {
+                        "dbValues": [
+                            "1"
+                        ],
+                        "uiValues": [
+                            "True"
+                        ]
+                    },
+                    "cm0AuthoringChangeRevision": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "creation_date": {
+                        "dbValues": [
+                            "2025-01-20T10:06:17-05:00"
+                        ],
+                        "uiValues": [
+                            "20-Jan-2025 10:06"
+                        ]
+                    },
+                    "date_released": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "fnd0InProcess": {
+                        "dbValues": [
+                            "0"
+                        ],
+                        "uiValues": [
+                            "False"
+                        ]
+                    },
+                    "is_modifiable": {
+                        "dbValues": [
+                            "1"
+                        ],
+                        "uiValues": [
+                            "True"
+                        ]
+                    },
+                    "is_vi": {
+                        "dbValues": [
+                            "0"
+                        ],
+                        "uiValues": [
+                            "False"
+                        ]
+                    },
+                    "items_tag": {
+                        "dbValues": [
+                            "g8ndoHtLJPZb_B"
+                        ],
+                        "uiValues": [
+                            "000633-Brew Tank - 1000 L"
+                        ]
+                    },
+                    "object_desc": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "object_name": {
+                        "dbValues": [
+                            "Brew Tank - 1000 L"
+                        ],
+                        "uiValues": [
+                            "Brew Tank - 1000 L"
+                        ]
+                    },
+                    "object_string": {
+                        "dbValues": [
+                            "000633/A;1-Brew Tank - 1000 L"
+                        ],
+                        "uiValues": [
+                            "000633/A;1-Brew Tank - 1000 L"
+                        ]
+                    },
+                    "release_status_list": {}
+                }
+            },
+            "QAodoHtLJPZb_B": {
+                "objectID": "QAodoHtLJPZb_B",
+                "uid": "QAodoHtLJPZb_B",
+                "className": "Mfg0MEEquipmentRevision",
+                "type": "Mfg0MEEquipmentRevision",
+                "props": {
+                    "awp0CellProperties": {
+                        "dbValues": [
+                            "Name\\:Blender  - High Speed",
+                            "ID\\:000628",
+                            "Revision\\:A"
+                        ],
+                        "uiValues": [
+                            "Name\\:Blender  - High Speed",
+                            "ID\\:000628",
+                            "Revision\\:A"
+                        ]
+                    },
+                    "awp0ConfiguredRevision": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ]
+                    },
+                    "awp0ThumbnailImageTicket": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ]
+                    },
+                    "checked_out_date": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "checked_out_user": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            " "
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "cls0IsEnforcementSatisfied": {
+                        "dbValues": [
+                            "1"
+                        ],
+                        "uiValues": [
+                            "True"
+                        ]
+                    },
+                    "cm0AuthoringChangeRevision": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "creation_date": {
+                        "dbValues": [
+                            "2025-01-20T10:02:47-05:00"
+                        ],
+                        "uiValues": [
+                            "20-Jan-2025 10:02"
+                        ]
+                    },
+                    "date_released": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "fnd0InProcess": {
+                        "dbValues": [
+                            "0"
+                        ],
+                        "uiValues": [
+                            "False"
+                        ]
+                    },
+                    "is_modifiable": {
+                        "dbValues": [
+                            "1"
+                        ],
+                        "uiValues": [
+                            "True"
+                        ]
+                    },
+                    "is_vi": {
+                        "dbValues": [
+                            "0"
+                        ],
+                        "uiValues": [
+                            "False"
+                        ]
+                    },
+                    "items_tag": {
+                        "dbValues": [
+                            "QAkdoHtLJPZb_B"
+                        ],
+                        "uiValues": [
+                            "000628-Blender  - High Speed"
+                        ]
+                    },
+                    "object_desc": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "object_name": {
+                        "dbValues": [
+                            "Blender  - High Speed"
+                        ],
+                        "uiValues": [
+                            "Blender  - High Speed"
+                        ]
+                    },
+                    "object_string": {
+                        "dbValues": [
+                            "000628/A;1-Blender  - High Speed"
+                        ],
+                        "uiValues": [
+                            "000628/A;1-Blender  - High Speed"
+                        ]
+                    },
+                    "release_status_list": {}
+                }
+            },
+            "hkkdoD3nJPZb_B": {
+                "objectID": "hkkdoD3nJPZb_B",
+                "uid": "hkkdoD3nJPZb_B",
+                "className": "Mfg0MEEquipmentRevision",
+                "type": "Mfg0MEEquipmentRevision",
+                "props": {
+                    "awp0CellProperties": {
+                        "dbValues": [
+                            "Name\\:Roaster - Low Temperature",
+                            "ID\\:000588",
+                            "Revision\\:A"
+                        ],
+                        "uiValues": [
+                            "Name\\:Roaster - Low Temperature",
+                            "ID\\:000588",
+                            "Revision\\:A"
+                        ]
+                    },
+                    "awp0ConfiguredRevision": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ]
+                    },
+                    "awp0ThumbnailImageTicket": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ]
+                    },
+                    "checked_out_date": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "checked_out_user": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            " "
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "cls0IsEnforcementSatisfied": {
+                        "dbValues": [
+                            "1"
+                        ],
+                        "uiValues": [
+                            "True"
+                        ]
+                    },
+                    "cm0AuthoringChangeRevision": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "creation_date": {
+                        "dbValues": [
+                            "2025-01-20T08:59:45-05:00"
+                        ],
+                        "uiValues": [
+                            "20-Jan-2025 08:59"
+                        ]
+                    },
+                    "date_released": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "fnd0InProcess": {
+                        "dbValues": [
+                            "0"
+                        ],
+                        "uiValues": [
+                            "False"
+                        ]
+                    },
+                    "is_modifiable": {
+                        "dbValues": [
+                            "1"
+                        ],
+                        "uiValues": [
+                            "True"
+                        ]
+                    },
+                    "is_vi": {
+                        "dbValues": [
+                            "0"
+                        ],
+                        "uiValues": [
+                            "False"
+                        ]
+                    },
+                    "items_tag": {
+                        "dbValues": [
+                            "hkgdoD3nJPZb_B"
+                        ],
+                        "uiValues": [
+                            "000588-Roaster - Low Temperature"
+                        ]
+                    },
+                    "object_desc": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "object_name": {
+                        "dbValues": [
+                            "Roaster - Low Temperature"
+                        ],
+                        "uiValues": [
+                            "Roaster - Low Temperature"
+                        ]
+                    },
+                    "object_string": {
+                        "dbValues": [
+                            "000588/A;1-Roaster - Low Temperature"
+                        ],
+                        "uiValues": [
+                            "000588/A;1-Roaster - Low Temperature"
+                        ]
+                    },
+                    "release_status_list": {}
+                }
+            },
+            "hYldoD3nJPZb_B": {
+                "objectID": "hYldoD3nJPZb_B",
+                "uid": "hYldoD3nJPZb_B",
+                "className": "Mfg0MEEquipmentRevision",
+                "type": "Mfg0MEEquipmentRevision",
+                "props": {
+                    "awp0CellProperties": {
+                        "dbValues": [
+                            "Name\\:Roaster - High Temperature",
+                            "ID\\:000587",
+                            "Revision\\:A"
+                        ],
+                        "uiValues": [
+                            "Name\\:Roaster - High Temperature",
+                            "ID\\:000587",
+                            "Revision\\:A"
+                        ]
+                    },
+                    "awp0ConfiguredRevision": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ]
+                    },
+                    "awp0ThumbnailImageTicket": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ]
+                    },
+                    "checked_out_date": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "checked_out_user": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            " "
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "cls0IsEnforcementSatisfied": {
+                        "dbValues": [
+                            "1"
+                        ],
+                        "uiValues": [
+                            "True"
+                        ]
+                    },
+                    "cm0AuthoringChangeRevision": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "creation_date": {
+                        "dbValues": [
+                            "2025-01-20T08:59:38-05:00"
+                        ],
+                        "uiValues": [
+                            "20-Jan-2025 08:59"
+                        ]
+                    },
+                    "date_released": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "fnd0InProcess": {
+                        "dbValues": [
+                            "0"
+                        ],
+                        "uiValues": [
+                            "False"
+                        ]
+                    },
+                    "is_modifiable": {
+                        "dbValues": [
+                            "1"
+                        ],
+                        "uiValues": [
+                            "True"
+                        ]
+                    },
+                    "is_vi": {
+                        "dbValues": [
+                            "0"
+                        ],
+                        "uiValues": [
+                            "False"
+                        ]
+                    },
+                    "items_tag": {
+                        "dbValues": [
+                            "hYhdoD3nJPZb_B"
+                        ],
+                        "uiValues": [
+                            "000587-Roaster - High Temperature"
+                        ]
+                    },
+                    "object_desc": {
+                        "dbValues": [
+                            ""
+                        ],
+                        "uiValues": [
+                            ""
+                        ],
+                        "isNulls": [
+                            true
+                        ]
+                    },
+                    "object_name": {
+                        "dbValues": [
+                            "Roaster - High Temperature"
+                        ],
+                        "uiValues": [
+                            "Roaster - High Temperature"
+                        ]
+                    },
+                    "object_string": {
+                        "dbValues": [
+                            "000587/A;1-Roaster - High Temperature"
+                        ],
+                        "uiValues": [
+                            "000587/A;1-Roaster - High Temperature"
+                        ]
+                    },
+                    "release_status_list": {}
+                }
+            },
+            "wYsdoPc4JPZb_B": {
+                "objectID": "wYsdoPc4JPZb_B",
+                "uid": "wYsdoPc4JPZb_B",
+                "className": "Mfg0MEEquipment",
+                "type": "Mfg0MEEquipment",
+                "props": {}
+            },
+            "g8ndoHtLJPZb_B": {
+                "objectID": "g8ndoHtLJPZb_B",
+                "uid": "g8ndoHtLJPZb_B",
+                "className": "Mfg0MEEquipment",
+                "type": "Mfg0MEEquipment",
+                "props": {}
+            },
+            "QAkdoHtLJPZb_B": {
+                "objectID": "QAkdoHtLJPZb_B",
+                "uid": "QAkdoHtLJPZb_B",
+                "className": "Mfg0MEEquipment",
+                "type": "Mfg0MEEquipment",
+                "props": {}
+            },
+            "hkgdoD3nJPZb_B": {
+                "objectID": "hkgdoD3nJPZb_B",
+                "uid": "hkgdoD3nJPZb_B",
+                "className": "Mfg0MEEquipment",
+                "type": "Mfg0MEEquipment",
+                "props": {}
+            },
+            "hYhdoD3nJPZb_B": {
+                "objectID": "hYhdoD3nJPZb_B",
+                "uid": "hYhdoD3nJPZb_B",
+                "className": "Mfg0MEEquipment",
+                "type": "Mfg0MEEquipment",
+                "props": {}
+            }
+        }
+    }
+}

@@ -4,13 +4,11 @@ import React, { useState } from 'react';
 import './GraphComponent.css';
 import PopupComponent from '../popup-component/PopupComponent';
 import 'font-awesome/css/font-awesome.min.css';
+import readData from '../../data/readData.json';
 
 const GraphComponent: React.FC = () => {
-    //   const [showPopup, setShowPopup] = useState(false);
-
-    //   const togglePopup = () => {
-    //     setShowPopup(!showPopup);
-    //   };
+    const dummyData = readData.ServiceData.modelObjects['SR::N::Mfg0BvrProcess..1.lvg$SWyBt5XnBC.hhrdqE2QJPZb_B.Qcgdq4U9JPZb_B.Group:/Thid_Q4pdq4U9JPZb_B.1...']
+        .props.Mfg0used_equipment.uiValues;
 
     const Sidebar = () => (
         <aside className='sidebar'>
@@ -50,6 +48,15 @@ const GraphComponent: React.FC = () => {
                     <button className='context-menu' onClick={togglePopup}>
                         <i className="fa fa-ellipsis-v"></i>
                     </button>
+
+                    {/* Tiles for Dummy Data */}
+                    <div className="tile-container">
+                        {dummyData.map((item, index) => (
+                            <div key={index} className="tile">
+                                {item}
+                            </div>
+                        ))}
+                    </div>
                 </div>
                 {showPopup && <PopupComponent onClose={togglePopup} />}
             </main>
