@@ -41,12 +41,20 @@
 .popup ul {
     list-style: none;
     padding-left: 0;
+    background: whitesmoke;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.popup ul h3 {
+    font-size: 16px;
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
 }
 
 .popup ul li {
-    padding: 8px 0;
-    border-bottom: 1px solid #ddd;
-    font-size: 16px;
+    padding: 10px;
 }
 
 .popup .search-box {
@@ -58,7 +66,7 @@
 
 .popup .search-box input {
     padding: 8px;
-    width: 80%;
+    width: 85%;
     border-radius: 4px;
     border: 1px solid #ccc;
 }
@@ -89,6 +97,12 @@
     border-bottom: 1px solid #ddd;
 }
 
+.popup ul li:hover,
+.popup .equipment-table td:hover {
+    cursor: pointer;
+    background-color: #daecf073;
+}
+
 .popup .equipment-table th {
     background-color: #f7f7f7;
 }
@@ -108,21 +122,20 @@
 }
 
 .popup-close {
+    font-size: 24px;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: -2rem;
+    right: 0;
+    color: #ddd;
     background: none;
     border: none;
-    color: #aaa;
-    font-size: 24px;
     cursor: pointer;
 }
 
 .popup-close:hover {
-    color: #333;
+    color: #aaa;
 }
 
 .selected {
-    background-color: lightblue;
-    cursor: pointer;
+    background-color: #cde6eb;
 }

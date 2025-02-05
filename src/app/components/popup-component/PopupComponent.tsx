@@ -40,8 +40,8 @@ const PopupComponent: React.FC<PopupComponentProps> = ({ onClose, onSelectEquipm
     return (
         <div className="popup">
             <div className="popup-content">
-                <h3>Suggested Equipment</h3>
                 <ul>
+                    <h3>Smart Suggestions</h3>
                     {suggestedEquipment.map((equipment: EquipmentRecord) => (
                         <li
                             key={equipment.uid}
@@ -58,7 +58,6 @@ const PopupComponent: React.FC<PopupComponentProps> = ({ onClose, onSelectEquipm
                     <button className="search-icon">🔍</button>
                 </div>
 
-                <h3>All Equipment</h3>
                 <table className="equipment-table">
                     <thead>
                         <tr>
@@ -66,7 +65,7 @@ const PopupComponent: React.FC<PopupComponentProps> = ({ onClose, onSelectEquipm
                         </tr>
                     </thead>
                     <tbody>
-                        {filteredEquipment && filteredEquipment.length >= 0 ? (
+                        {filteredEquipment && filteredEquipment.length > 0 ? (
                             filteredEquipment.map((equipment: EquipmentRecord) => (
                                 <tr key={equipment.uid} className={selectedEquipment && selectedEquipment.uid === equipment.uid ? 'selected' : ''}
                                     onClick={() => handleEquipmentSelect(equipment)}>
@@ -79,10 +78,8 @@ const PopupComponent: React.FC<PopupComponentProps> = ({ onClose, onSelectEquipm
                     </tbody>
                 </table>
                 <button className='add-button' onClick={handleAddClick} disabled={!selectedEquipment}>Add</button>
+                <button className="popup-close" onClick={onClose}>X</button>
             </div>
-            <button className="popup-close" onClick={onClose}>
-                <i className="fas fa-times"></i>
-            </button>
         </div>
     );
 };

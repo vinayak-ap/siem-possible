@@ -14,10 +14,15 @@ export interface EquipmentVMO {
 }
 
 export function getEquipmentData(data: EquipmentVMO[]): EquipmentRecord[] {
-    return data.map(item => ({
-        uid: item.uid,
-        object_string: item.props?.object_string?.uiValues[0]
-    }));
+    return data.reduce((result: EquipmentRecord[], item) => {
+        if (item.props?.object_string?.uiValues?.length > 0) {
+            result.push({
+                uid: item.uid,
+                object_string: item.props.object_string.uiValues[0]
+            });
+        }
+        return result;
+    }, []);
 }
 
 export const suggestedEquipment: EquipmentRecord[] = [
