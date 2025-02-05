@@ -121,3 +121,8 @@
 .popup-close:hover {
     color: #333;
 }
+
+.selected {
+    background-color: lightblue;
+    cursor: pointer;
+}
