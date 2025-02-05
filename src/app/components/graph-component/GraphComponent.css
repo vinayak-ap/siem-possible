@@ -1,6 +1,5 @@
 body {
     margin: initial;
-    /* background-image: radial-gradient(ellipse farthest-side at 75% top, #55a0b9 -100%, #0077a1 40%, #006b91 75%, #006487 100%); */
 }
 
 /* App Layout */
@@ -41,17 +40,14 @@ body {
 .main-container {
     /* flex: 1; */
     display: flex;
-    /* flex-direction: column; */
 }
 
 /* Header */
 .header {
-    /* background-color: #005f56; */
     background-image: radial-gradient(ellipse farthest-side at 75% top, #55a0b9 -100%, #0077a1 40%, #006b91 75%, #006487 100%);
     color: #ffffff;
     padding: 0.5rem 1rem;
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -126,10 +122,7 @@ body {
     border: 1px solid #c1d6be;
     padding: 10px;
     border-radius: 4px;
-    /* text-align: center; */
     font-size: 14px;
-    /* font-weight: 500; */
-    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
 }
 
 /* Context Menu Button */

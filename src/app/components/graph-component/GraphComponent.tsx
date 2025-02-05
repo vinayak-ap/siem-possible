@@ -3,9 +3,9 @@
 import React, { useState } from 'react';
 import PopupComponent from '../popup-component/PopupComponent';
 import { EquipmentRecord, getEquipmentData } from '../../helper/equipment';
-import 'font-awesome/css/font-awesome.min.css';
 import './GraphComponent.css';
-import readData from '../../data/readData.json';
+import 'font-awesome/css/font-awesome.min.css';
+import readData from '../../helper/readData.json';
 
 const GraphComponent: React.FC = () => {
     const dummyData = getEquipmentData([readData.ServiceData.modelObjects['SR::N::Mfg0BvrProcess..1.lvg$SWyBt5XnBC.hhrdqE2QJPZb_B.Qcgdq4U9JPZb_B.Group:/Thid_Q4pdq4U9JPZb_B.1...']]);

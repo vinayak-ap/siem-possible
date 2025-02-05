@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { suggestedEquipment, EquipmentRecord, EquipmentVMO, getEquipmentData } from '../../helper/equipment';
 import 'font-awesome/css/font-awesome.min.css';
 import './PopupComponent.css';
-import listData from '../../data/listData.json';
+import listData from '../../helper/listData.json';
 
 interface PopupComponentProps {
     onClose: () => void;
