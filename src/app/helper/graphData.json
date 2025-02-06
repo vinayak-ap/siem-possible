@@ -19,9 +19,9 @@
         {
           "name": "Grinding Coffe Beans",
           "type": "capability",
-          "productiontype": "cost-efficient",
-          "setpoint": "195°C to 210°C batch size 1000 kg",
-          "operation": "roasting coffe beans"
+          "productiontype": "time-efficient",
+          "setpoint": "batch size 1000 kg",
+          "operation": "grinding coffe beans"
         }
       ]
     }

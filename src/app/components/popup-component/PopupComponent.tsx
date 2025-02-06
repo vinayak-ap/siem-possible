@@ -1,38 +1,76 @@
 'use client';
-
-import React, { useState } from 'react';
+ 
 import { GraphNode, suggestedEquipment, EquipmentRecord } from '../../helper/graph-helper';
+import React, { useState,useEffect } from 'react';
 import 'font-awesome/css/font-awesome.min.css';
 import './PopupComponent.css';
 // import listData from '../../helper/listData.json';
 import equipmentData from '../../helper/equipmentData.json';
-
+ 
 interface PopupComponentProps {
     selectedGraphNode: GraphNode | undefined;
     onClose: () => void;
     handleAssignEquipment: (equipment: EquipmentRecord) => void;
 }
-
+ 
 const PopupComponent: React.FC<PopupComponentProps> = ({ selectedGraphNode, onClose, handleAssignEquipment }) => {
     const [searchQuery, setSearchQuery] = useState('');
+    //console.log(response,"hhhhh")
     // const [selectedGraphNode, setSelectedGraphNode] = useState<GraphNode>();
     const [selectedEquipment, setSelectedEquipment] = useState<EquipmentRecord | null>(null);
-    // const equipmentData: EquipmentRecord[] = getEquipmentData(Object.values(listData.ServiceData.modelObjects) as unknown as EquipmentVMO[]);
-
+    const [response, setResponse] = useState<any>();
+    const [loading, setLoading] = useState<boolean>(false);
+ 
     const getFilteredEquipment = () => {
         return equipmentData.filter(item => item.equipment_name && item.equipment_name.toLowerCase().includes(searchQuery));
     };
-
+ 
+    useEffect(() => {
+        const fetchLLMData = async () => {
+          setLoading(true);
+          try {
+            const res = await fetch("/api/llm", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json"
+              },
+              body: JSON.stringify({
+                productiontype:'cost-efficient',
+                setpoint: selectedGraphNode?.attributes[0].setpoint,
+                operation:selectedGraphNode?.attributes[0].operation // Replace with your desired value
+              })
+            });
+            console.log(res)
+            const data = await res.json();
+ 
+            let parsedResponse;
+            try {
+              parsedResponse = JSON.parse(data.result);
+            } catch (error) {
+              parsedResponse = data.result; // Fallback if it's not a stringified JSON
+            }
+     
+            setResponse(data.result);
+ 
+          } catch (error) {
+            console.error("Error fetching LLM response:", error);
+          }
+          setLoading(false);
+        };
+   
+        fetchLLMData();
+      }, []);
+ 
     const filteredEquipment = searchQuery ? getFilteredEquipment() : equipmentData;
-
+ 
     const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setSearchQuery(event.target.value);
     };
-
-    const handleEquipmentSelect = (equipment: EquipmentRecord) => {
+ 
+    const handleEquipmentSelect = (equipment: any) => {
         setSelectedEquipment(equipment === selectedEquipment ? null : equipment);
     };
-
+ 
     const handleAddClick = () => {
         if (selectedEquipment) {
             handleAssignEquipment(selectedEquipment);
@@ -44,12 +82,12 @@ const PopupComponent: React.FC<PopupComponentProps> = ({ selectedGraphNode, onCl
         <div className="popup">
             <div className="popup-content">
                 <header className="popup-header">
-                    <h3>Add Equipment</h3>
+                    <div>Add Equipment</div>
                 </header>
                 <div className="popup-body">
                     <ul>
                         <h3>Smart Suggestions</h3>
-                        {suggestedEquipment.map((equipment: EquipmentRecord) => (
+                        {/* {suggestedEquipment.map((equipment: EquipmentRecord) => (
                             <li
                                 key={equipment.equipment_name}
                                 className={selectedEquipment && selectedEquipment.equipment_name === equipment.equipment_name ? 'selected' : ''}
@@ -57,7 +95,26 @@ const PopupComponent: React.FC<PopupComponentProps> = ({ selectedGraphNode, onCl
                             >
                                 {equipment.equipment_name}
                             </li>
-                        ))}
+                        ))} */}
+                        {
+                            loading ? <p>Loading...</p> : 
+                            <li
+                                key={response?.equipment?.equipment_name}
+                                className={selectedEquipment && selectedEquipment === response?.equipment ? 'selected' : ''}
+                                onClick={() => handleEquipmentSelect(response?.equipment)}
+                            >
+                            
+                                <div className="text-xl font-semibold">{response}</div>
+                            </li>
+                        }
+                        {/* <li
+                            key={response?.equipment?.equipment_name}
+                            className={selectedEquipment && selectedEquipment === response?.equipment ? 'selected' : ''}
+                            onClick={() => handleEquipmentSelect(response?.equipment)}
+                        >
+                         
+                            <h3 className="text-xl font-semibold">{response}</h3>
+                        </li> */}
                     </ul>
 
                     <div className="search-box">
