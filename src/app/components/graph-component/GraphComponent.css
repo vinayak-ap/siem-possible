@@ -126,6 +126,19 @@ body {
     border-radius: 4px;
     font-size: 14px;
 }
+.capability {
+    background: #e8eaec;
+    border: 1px solid #ccd0d5;
+}
+.equipment {
+    background: #dfeadd;
+    border: 1px solid #c1d6be;
+}
+.attribute-separator {
+    border: none;
+    border-top: 1px solid #ccd0d5;
+    margin: 5px 0;
+}
 
 /* Context Menu Button */
 .context-menu {

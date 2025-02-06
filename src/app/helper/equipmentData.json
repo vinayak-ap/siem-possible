@@ -1,0 +1,102 @@
+[
+    {
+        "equipment_name": "Green Coffee Cleaner",
+        "alternative_set_points": "Airflow rate: 700–900 m³/h",
+        "estimated_operating_cost_per_hour_usd": 12
+    },
+    {
+        "equipment_name": "Destoner",
+        "alternative_set_points": "Vibration frequency: 60 Hz",
+        "estimated_operating_cost_per_hour_usd": 10
+    },
+    {
+        "equipment_name": "Weighing and Dosing Unit",
+        "alternative_set_points": "Accuracy: ±0.05%",
+        "estimated_operating_cost_per_hour_usd": 7
+    },
+    {
+        "equipment_name": "Pre-Roast Storage Silo",
+        "alternative_set_points": "Capacity: 10,000 kg",
+        "estimated_operating_cost_per_hour_usd": 3
+    },
+    {
+        "equipment_name": "Roaster R-502",
+        "alternative_set_points": "Temperature: 180°C to 220°C (356°F to 392°F); Batch size: 1,000 kg",
+        "estimated_operating_cost_per_hour_usd": 60
+    },
+    {
+        "equipment_name": "Roaster R-702",
+        "alternative_set_points": "Temperature: 200°C to 220°C (392°F to 428°F); Batch size: 1,500 kg",
+        "estimated_operating_cost_per_hour_usd": 80
+    },
+    {
+        "equipment_name": "Roaster R-902",
+        "alternative_set_points": "Temperature: 160°C to 180°C (320°F to 356°F); Batch size: 500 kg",
+        "estimated_operating_cost_per_hour_usd": 40
+    },
+    {
+        "equipment_name": "Cyclone Separator",
+        "alternative_set_points": "Airflow rate: 1,500 m³/h",
+        "estimated_operating_cost_per_hour_usd": 18
+    },
+    {
+        "equipment_name": "Cooling Tray",
+        "alternative_set_points": "Ambient temperature; Cooling time: 2 minutes",
+        "estimated_operating_cost_per_hour_usd": 12
+    },
+    {
+        "equipment_name": "Post-Roast Storage Silo",
+        "alternative_set_points": "Capacity: 10,000 kg",
+        "estimated_operating_cost_per_hour_usd": 3
+    },
+    {
+        "equipment_name": "Industrial Grinder",
+        "alternative_set_points": "Grind size: Customized per brewing method; Capacity: 5,000 kg/hr",
+        "estimated_operating_cost_per_hour_usd": 50
+    },
+    {
+        "equipment_name": "Instant Coffee Extractor",
+        "alternative_set_points": "Temperature: 160°C (320°F); Pressure: 20 bar",
+        "estimated_operating_cost_per_hour_usd": 70
+    },
+    {
+        "equipment_name": "Spray Dryer",
+        "alternative_set_points": "Inlet temperature: 220°C (428°F); Outlet temperature: 100°C (212°F)",
+        "estimated_operating_cost_per_hour_usd": 80
+    },
+    {
+        "equipment_name": "Agglomerator",
+        "alternative_set_points": "Humidity: 12%; Temperature: 75°C (167°F)",
+        "estimated_operating_cost_per_hour_usd": 60
+    },
+    {
+        "equipment_name": "Freeze Dryer",
+        "alternative_set_points": "Temperature: -45°C (-49°F); Pressure: 0.05 mbar",
+        "estimated_operating_cost_per_hour_usd": 90
+    },
+    {
+        "equipment_name": "Packaging Machine",
+        "alternative_set_points": "Speed: 150 packages/minute; Nitrogen flushing",
+        "estimated_operating_cost_per_hour_usd": 25
+    },
+    {
+        "equipment_name": "Metal Detector",
+        "alternative_set_points": "Sensitivity: 1.0 mm ferrous metals",
+        "estimated_operating_cost_per_hour_usd": 7
+    },
+    {
+        "equipment_name": "Checkweigher",
+        "alternative_set_points": "Accuracy: ±0.2 g",
+        "estimated_operating_cost_per_hour_usd": 7
+    },
+    {
+        "equipment_name": "Palletizer",
+        "alternative_set_points": "Speed: 40 pallets/hour",
+        "estimated_operating_cost_per_hour_usd": 20
+    },
+    {
+        "equipment_name": "Clean-in-Place System",
+        "alternative_set_points": "Flow rate: 300 liters/minute; Temperature: 90°C (194°F)",
+        "estimated_operating_cost_per_hour_usd": 25
+    }
+]

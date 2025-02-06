@@ -25,11 +25,40 @@
 .popup-content {
     background-color: #fff;
     border-radius: 8px;
-    padding: 20px;
-    max-width: 500px;
+    /* padding: 20px; */
     width: 100%;
+    max-width: 500px;
+    /* height: 75vh; */
+    /* overflow-y: auto; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
+}
+
+.popup-body {
+    /* flex-grow: 1; */
+    padding: 20px;
+    max-height: 65vh;
+    overflow-y: auto;
+    /* margin: 1rem 0; */
+  }
+
+.popup-header {
+    flex-shrink: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem 0;
+    background-color: #f0f0f0;
+    border-radius: 8px 8px 0px 0px;
+  }
+
+.popup-footer {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #f0f0f0; */
+  border-radius: 0px 0px 8px 8px;
+  padding: 1rem;
 }
 
 .popup h3 {
@@ -98,7 +127,7 @@
 }
 
 .popup ul li:hover,
-.popup .equipment-table td:hover {
+.popup .equipment-table tr:hover {
     cursor: pointer;
     background-color: #daecf073;
 }
@@ -108,7 +137,7 @@
 }
 
 .popup .add-button {
-    margin-top: 20px;
+    /* margin: 0px 20px; */
     padding: 10px 20px;
     background-color: #28a745;
     border: none;
