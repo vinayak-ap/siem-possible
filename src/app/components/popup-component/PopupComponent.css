@@ -79,7 +79,7 @@
     font-size: 16px;
     margin: 0;
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    /* border-bottom: 1px solid #ddd; */
 }
 
 .popup ul li {
@@ -168,3 +168,30 @@
 .selected {
     background-color: #cde6eb;
 }
+
+.smart-suggestions-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .toggle-container {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .toggle-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .toggle-button {
+    padding: 4px 8px;
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
