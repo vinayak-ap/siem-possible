@@ -25,8 +25,8 @@ const GraphComponent: React.FC = () => {
 
     return (
         <>
-            {graphData.map(node => (
-                <div key={node.uid} className='graph-node'>
+            {graphData.map((node, index) => (
+                <div key={index} className='graph-node'>
                     <div className='graph-node-title'>{node.title}</div>
                     <button className='context-menu' onClick={() => handleGraphNodeSelection(node as GraphNode)}>
                         <i className="fa fa-ellipsis-v"></i>

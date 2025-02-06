@@ -87,15 +87,7 @@ const PopupComponent: React.FC<PopupComponentProps> = ({ selectedGraphNode, onCl
                 <div className="popup-body">
                     <ul>
                         <h3>Smart Suggestions</h3>
-                        {/* {suggestedEquipment.map((equipment: EquipmentRecord) => (
-                            <li
-                                key={equipment.equipment_name}
-                                className={selectedEquipment && selectedEquipment.equipment_name === equipment.equipment_name ? 'selected' : ''}
-                                onClick={() => handleEquipmentSelect(equipment)}
-                            >
-                                {equipment.equipment_name}
-                            </li>
-                        ))} */}
+                        <hr className="attribute-separator" />
                         {
                             loading ? <p>Loading...</p> : 
                             <li
@@ -107,14 +99,6 @@ const PopupComponent: React.FC<PopupComponentProps> = ({ selectedGraphNode, onCl
                                 <div className="text-xl font-semibold">{response}</div>
                             </li>
                         }
-                        {/* <li
-                            key={response?.equipment?.equipment_name}
-                            className={selectedEquipment && selectedEquipment === response?.equipment ? 'selected' : ''}
-                            onClick={() => handleEquipmentSelect(response?.equipment)}
-                        >
-                         
-                            <h3 className="text-xl font-semibold">{response}</h3>
-                        </li> */}
                     </ul>
 
                     <div className="search-box">
