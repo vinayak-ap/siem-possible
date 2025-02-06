@@ -46,11 +46,12 @@ const PopupComponent: React.FC<PopupComponentProps> = ({ selectedGraphNode, onCl
             let parsedResponse;
             try {
               parsedResponse = JSON.parse(data.result);
+              setResponse(parsedResponse);
             } catch (error) {
               parsedResponse = data.result; // Fallback if it's not a stringified JSON
             }
      
-            setResponse(data.result);
+          
  
           } catch (error) {
             console.error("Error fetching LLM response:", error);
@@ -96,7 +97,8 @@ const PopupComponent: React.FC<PopupComponentProps> = ({ selectedGraphNode, onCl
                                 onClick={() => handleEquipmentSelect(response?.equipment)}
                             >
                             
-                                <div className="text-xl font-semibold">{response}</div>
+                                <h3 className="text-xl font-semibold">{response?.equipment}</h3>
+                                <p>{response?.description}</p>
                             </li>
                         }
                     </ul>
