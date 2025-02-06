@@ -1,18 +1,20 @@
 'use client';
 
 import React, { useState } from 'react';
-import { suggestedEquipment, EquipmentRecord, EquipmentVMO, getEquipmentData } from '../../helper/equipment';
+import { GraphNode, suggestedEquipment, EquipmentRecord, EquipmentVMO, getEquipmentData } from '../../helper/graph-helper';
 import 'font-awesome/css/font-awesome.min.css';
 import './PopupComponent.css';
 import listData from '../../helper/listData.json';
 
 interface PopupComponentProps {
+    selectedGraphNode: GraphNode | undefined;
     onClose: () => void;
     onSelectEquipment: (equipment: EquipmentRecord) => void;
 }
 
-const PopupComponent: React.FC<PopupComponentProps> = ({ onClose, onSelectEquipment }) => {
+const PopupComponent: React.FC<PopupComponentProps> = ({ selectedGraphNode, onClose, onSelectEquipment }) => {
     const [searchQuery, setSearchQuery] = useState('');
+    // const [selectedGraphNode, setSelectedGraphNode] = useState<GraphNode>();
     const [selectedEquipment, setSelectedEquipment] = useState<EquipmentRecord | null>(null);
     const equipmentData: EquipmentRecord[] = getEquipmentData(Object.values(listData.ServiceData.modelObjects) as unknown as EquipmentVMO[]);
 

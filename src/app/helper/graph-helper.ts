@@ -1,3 +1,9 @@
+export interface GraphNode {
+    uid: string;
+    title: string;
+    attributes?: object[];
+}
+
 export interface EquipmentRecord {
     uid?: string;
     object_string?: string;

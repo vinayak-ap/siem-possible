@@ -84,11 +84,13 @@ body {
     padding: 16px;
     height: 95vh;
     display: flex;
+    gap: 24px;
 }
 
 /* Card (Graph Node) */
 .graph-node {
     width: 256px;
+    height: 150px;
     padding: 20px;
     display: flex;
     flex-direction: column;

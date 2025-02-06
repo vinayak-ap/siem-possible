@@ -1,0 +1,28 @@
+[
+    {
+      "uid": "SR::N::Mfg0BvrProcess..1.qL0XKKUqdNMmaC.w9mdpIOwJTaUDD.wsndK5QmJTaUDD.Group:/Thuid_gthdK5QmJTaUDD.1...",
+      "title": "Coffee Roasting",
+      "attributes": [
+        {
+          "name": "Roasting Coffe Beans",
+          "type": "capability",
+          "productiontype": "cost-efficient",
+          "setpoint": "195°C to 210°C batch size 1000 kg",
+          "operation": "roasting coffe beans"
+        }
+      ]
+    },
+    {
+      "id": "SR::N::Mfg0BvrProcess..1.CaMIWAW2dNs4gD.w9mdpIOwJTaUDD.wsndK5QmJTaUDD.Group:/Thid_wFndK5QmJTaUDD.1...",
+      "title": "Coffee Grinding",
+      "attributes": [
+        {
+          "name": "Grinding Coffe Beans",
+          "type": "capability",
+          "productiontype": "cost-efficient",
+          "setpoint": "195°C to 210°C batch size 1000 kg",
+          "operation": "roasting coffe beans"
+        }
+      ]
+    }
+  ]
